@@ -12,7 +12,7 @@
         <div class="calculator">
       <input id="user_input" placeholder="0"/>
       <br />
-      <button class="btn" onclick="press(1)">1</button>
+      <button id="btn" onclick="press(1)">1</button>
       <button id="btn" onclick="press(2)">2</button>
       <button id="btn" onclick="press(3)">3</button>
       <button id="btn" onclick="press('+')">+</button>
@@ -29,10 +29,10 @@
     
     <button id="btn" onclick="press('.')">.</button>
       <button id="btn" onclick="press(0)">0</button>
-      <button id="btn" onclick="erace()">C</button>
+      <button id="btn" class=" btnErace" onclick="erace()">C</button>
       <button id="btn" onclick="press('/')">/</button>
       <br>
-      <button id="btn" onclick="equal()">=</button>
+      <button id="btnEqual" onclick="equal()">=</button>
     </div>
 </div>
     <script src="script.js"></script>
