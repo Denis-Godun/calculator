@@ -1,16 +1,28 @@
+//находим поле ввода
 const userInput = document.querySelector("#user_input");
+// создаём переменную пустой строки
 let expression = "";
 
+//создаём функцию сробатывающую по клику
 press = (num) => {
+  //записываем данные в пустую строку
   expression += num;
+  //присваиваем полю ввода введённое значение
   userInput.value = expression;
 };
 
+//функция по клику на =
 equal = () => {
+  //присваиваем полю значение полученное из введённых данных
+  //складываем строчные значения при помощи метода eval
   userInput.value = eval(expression);
+  //делаем строку пустой при вводе нового выражения
   expression = "";
 };
- erace = () => {
-    expression = ""
-    userInput.value = expression;
- }
+//функция по клику на С
+erace = () => {
+  //создаём пустую строку
+  expression = "";
+  //присваиваем полю значение пустой строки
+  userInput.value = expression;
+};
